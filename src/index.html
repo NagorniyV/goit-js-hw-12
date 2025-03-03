@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-js-hw-12</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <style></style>
   </head>
   <body>
-    <script type="module" src="./main.js"></script>
+    <form class="form form-js">
+      <input
+        type="text"
+        name="query"
+        class="search-input search-input-js"
+        placeholder="Search images"
+      />
+      <button class="btn" type="submit">Search</button>
+      <span class="loader hidden"></span>
+    </form>
+    <ul class="gallery gallery-js"></ul>
+    <div class="divv">
+      <button class="but btn-js" type="submit">Load more</button>
+      <p class="loading-text hidden">Loading images, please wait...</p>
+    </div>
+
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
